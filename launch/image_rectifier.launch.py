@@ -11,7 +11,7 @@ def generate_launch_description():
             name='image_rectifier_node',
             parameters=[{
                 'reliable_qos': False,  # Set to True for reliable QoS
-                'input_topic': 'input/image_raw/compressed',  # Change to 'input/image_raw' for uncompressed
+                'input_topic': 'camera/rear_mid/compressed',  # Change to 'input/image_raw' for uncompressed
                 'output_topic': 'output/image_rect'
             }],
             output='screen'
